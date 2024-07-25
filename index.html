@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Sempre Bela</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+        <h1>Salão Sempre Bela</h1>
+        <form id="bookingForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="nome" name="name" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="horario">Horário:</label>
+            <select id="horario" name="time" required>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+            </select>
+        
+            <label for="service">Serviço:</label>
+            <select id="service" name="service" required>
+                <option value="Progressiva">Progressiva</option>
+                <option value="Botox">Botox</option>
+                <option value="Selagem">Selagem</option>
+                <option value="Idratação+Escova e Prancha">Idratação+Escova e Prancha</option>
+                <option value="Coloração">Coloração</option>
+                <option value="Mechas">Mechas</option>
+                <option value="Manicure e Pedicure">Manicure e Pedicure</option>       
+            </select>
+
+            <button type="submit">Agendar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
